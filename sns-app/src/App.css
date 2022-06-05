@@ -1,0 +1,97 @@
+:root {
+  --yellow: #f5c32c;
+  /* #7884e6 */
+  --point: rgba(120, 132, 230, 0.6);
+  --black: #242d49;
+  --gray: #242d49a6;
+  --lightGray : rgba(120, 132, 230, 0.2);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: rgba(255, 255, 255, 0.64);
+  /* --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%); */
+  --buttonBg: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --green: #4CB256;
+  --blue: #4A4EB7;
+  --red: #EF5757;
+  --yellow: #E1AE4A;
+
+  --green-bg: rgba(76, 178, 86, 0.1);
+  --blue-bg: rgba(74, 78, 183, 0.1);
+  --red-bg: rgba(239, 87, 87, 0.1);
+  --yellow-bg: rgba(225, 174, 74, 0.1);
+}
+
+input {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.App {
+  overflow: hidden;
+  color: var(--black);
+  background-color: #f3f3f3;
+  padding: 1rem;
+}
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background-color: #a6ddf0;
+  filter: blur(72px);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--point);
+  background: transparent;
+  border: 2px solid var(--point);
+}
+
+figure.figure {
+  position: relative;
+  overflow: hidden;
+}
+
+figure.figure>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.gradientFontColor {
+  background-color: red;
+  background-image: var(--buttonBg);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+input::placeholder {
+  transition: all 0.3s;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}

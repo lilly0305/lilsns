@@ -1,0 +1,43 @@
+.LogoSearch {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.LogoSearch>img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.LogoSearch>p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LogoSearch > i {
+  font-size: 2.4rem;
+}
+
+.Search {
+  display: flex;
+  background-color: var(--inputColor);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.Search>input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.s-icon {
+  display: flex;
+  place-items: center;
+  background: var(--buttonBg);
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+  cursor: pointer;
+}

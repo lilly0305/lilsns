@@ -1,0 +1,54 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--cardColor);
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.Post>img {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.Post i {
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.Post i.active,
+.Post i:hover {
+  color: var(--point);
+}
+
+.reaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reaction strong {
+  color: var(--blue);
+}
+
+.reaction>span {
+  color: var(--gray);
+}
+
+.postReaction {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.detail span {
+  font-size: 18px;
+}
+
+.detail span:nth-of-type(2){
+  margin-left: 5px;
+}

@@ -1,0 +1,20 @@
+.Logo {
+  display: flex;
+  align-items: center;
+}
+
+.Logo div {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.Logo i {
+  font-size: 6rem;
+}
+
+.Logo div span {
+  line-height: 1;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
