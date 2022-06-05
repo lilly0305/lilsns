@@ -11,7 +11,7 @@ function App() {
       
       {/* <Home/> */}
       <Profile />
-      <Auth/>
+      {/* <Auth/> */}
     </div>
   );
 }
