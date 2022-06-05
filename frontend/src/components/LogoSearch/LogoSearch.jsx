@@ -1,3 +1,4 @@
+import Logo from '../../elements/Logo'
 import './LogoSearch.css'
 
 const LogoSearch = () => {
