@@ -68,6 +68,12 @@ input {
   border: 2px solid var(--point);
 }
 
+.button:disabled {
+  color: var(--gray);
+  background: var(--inputColor);
+  pointer-events: none;
+}
+
 figure.figure {
   position: relative;
   overflow: hidden;
