@@ -1,9 +1,12 @@
+import { useSelector } from 'react-redux';
 import './Post.css';
 
-const Post = ({data, id}) => {
+const Post = ({data}) => {
+  const {user} = useSelector((state) => state.authReducer.authData);
+
   return (
     <div className='Post'>
-      <img src={data.img} alt={data.name} />
+      <img src={data.image ? process.env.REACT_APP_PUBLIC_FOLDER + data.image : ""} alt={data.name} />
 
       <div className='reaction'>
         <div className="postReaction">
